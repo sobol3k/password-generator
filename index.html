@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>generator haseł</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>Generator haseł</h1>
+    </div>
+    <p class="how-many-characters">
+      Wybierz z ilu znaków ma się składać hasło:
+    </p>
+    <div class="row">
+      <label>6 znaków 
+         <input type="radio" value="6" name="characters">
+      </label>
+      <label>8 znaków 
+         <input type="radio" value="8" name="characters">
+      </label>
+      <label>10 znaków 
+         <input type="radio" value="10" name="characters" class="exception">
+      </label>
+    </div>
+     <div class="window-with-generated-password">
+       <input type="text" value="PASSWORD" class="generated-password" disabled>
+    </div>
+     <div class="row-with-button">
+       <button type="button">generuj</button>
+     </div>
+     <!-- pseudo-elementy -->
+     <div class="pseudo-element"></div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

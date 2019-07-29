@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    color: black;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url('../png/background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Lato', sans-serif;
+}
+        
+.wrapper{
+    align-self: center;
+    position: relative;
+    width: 400px;
+    height: 250px;
+    padding: 15px;
+    border: 5px solid white;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.7);
+    box-shadow: 1px 1px 50px 15px gray;
+}
+        
+.header{
+    text-align: center;
+    margin-bottom: 10px;
+}
+        
+.how-many-characters{
+    margin-top: 16.5px;
+    margin-bottom: 15px;
+}
+        
+input[type="radio"]:not(.exception){
+    margin-right: 50px;
+}
+        
+.window-with-generated-password{
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+        
+.generated-password{
+    width: 200px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.5);
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+        
+.row-with-button{
+    margin-top: -5px;
+    text-align: center;
+}
+        
+button{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: black;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+        
+/* pseudo-elements */
+.wrapper::after{
+    content: '';
+    width: 50%;
+    height: 5px;
+    background: black;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+        
+.wrapper::before{
+    content: '';
+    width: 50%;
+    height: 5px;
+    background: black;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+        
+.pseudo-element::after{
+    content: '';
+    height: 175px;
+    width: 5px;
+    background: black;
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+        
+.pseudo-element::before{
+    content: '';
+    height: 175px;
+    width: 5px;
+    background: black;
+    display: block;
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
