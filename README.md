@@ -1,3 +1,7 @@
+<a href="https://sobol3k.github.io/password-generator/">
+  <strong>Live</strong>
+</a>
+
 <h1>password generator</h1>
 <p>
   This application allows you to generate any password consisting from 6 to 10 characters. 
